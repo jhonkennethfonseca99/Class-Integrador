@@ -1,0 +1,21 @@
+# Este me permite poner las condiciones de solo letras y no numeros
+     char car = evt.getKeyChar();
+      //
+        if ((car < 'a' || car > 'z') && (car < 'A' || car > 'Z')
+                && car != 'á'
+                && car != 'é'
+                && car != 'í'
+                && car != 'ó'
+                && car != 'ú'
+                && car != 'Á'
+                && car != 'É'
+                && car != 'I'
+                && car != 'Ó'
+                && car != 'Ú'
+                && car != 'Ü'
+                && car != 'ü'
+                && car != 'Ñ'
+                && car != 'ñ'
+                && (car != (char) KeyEvent.VK_SPACE)) {
+            evt.consume();
+        }
